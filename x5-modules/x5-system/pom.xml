@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.junle</groupId>
+        <artifactId>x5-modules</artifactId>
+        <version>3.6.7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+	
+    <artifactId>x5-modules-system</artifactId>
+
+    <description>
+        x5-modules-system系统模块
+    </description>
+	
+    <dependencies>
+    	
+    	<!-- SpringCloud Alibaba Nacos -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        
+        <!-- SpringCloud Alibaba Nacos Config -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        
+    	<!-- SpringCloud Alibaba Sentinel -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+        
+    	<!-- SpringBoot Actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        
+        <!-- Mysql Connector -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+        </dependency>
+        
+        <!-- X5 Common DataSource -->
+        <dependency>
+            <groupId>org.junle</groupId>
+            <artifactId>x5-common-datasource</artifactId>
+        </dependency>
+        
+        <!-- X5 Common DataScope -->
+        <dependency>
+            <groupId>org.junle</groupId>
+            <artifactId>x5-common-datascope</artifactId>
+        </dependency>
+        
+        <!-- X5 Common Log -->
+        <dependency>
+            <groupId>org.junle</groupId>
+            <artifactId>x5-common-log</artifactId>
+        </dependency>
+        
+        <!-- X5 Common Swagger -->
+        <dependency>
+            <groupId>org.junle</groupId>
+            <artifactId>x5-common-swagger</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+   
+</project>

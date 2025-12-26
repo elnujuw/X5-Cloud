@@ -1,0 +1,2 @@
+org.junle.x5.common.log.service.AsyncLogService
+org.junle.x5.common.log.aspect.LogAspect

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.junle</groupId>
+        <artifactId>x5-api</artifactId>
+        <version>3.6.7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>x5-api-system</artifactId>
+
+    <description>
+        x5-api-system系统接口模块
+    </description>
+
+    <dependencies>
+		
+        <!-- X5 Common Core-->
+        <dependency>
+            <groupId>org.junle</groupId>
+            <artifactId>x5-common-core</artifactId>
+        </dependency>
+        
+    </dependencies>
+
+</project>

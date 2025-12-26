@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.junle</groupId>
+        <artifactId>x5</artifactId>
+        <version>3.6.7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>x5-common-log</module>
+        <module>x5-common-core</module>
+        <module>x5-common-redis</module>
+        <module>x5-common-seata</module>
+        <module>x5-common-swagger</module>
+        <module>x5-common-security</module>
+        <module>x5-common-sensitive</module>
+        <module>x5-common-datascope</module>
+        <module>x5-common-datasource</module>
+    </modules>
+
+    <artifactId>x5-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        x5-common通用模块
+    </description>
+
+</project>

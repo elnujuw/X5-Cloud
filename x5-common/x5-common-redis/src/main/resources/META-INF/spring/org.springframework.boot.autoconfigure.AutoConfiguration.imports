@@ -1,0 +1,2 @@
+org.junle.x5.common.redis.configure.RedisConfig
+org.junle.x5.common.redis.service.RedisService

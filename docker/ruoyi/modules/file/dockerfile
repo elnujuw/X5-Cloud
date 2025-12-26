@@ -1,0 +1,15 @@
+# 基础镜像
+FROM  openjdk:8-jre
+# author
+MAINTAINER x5
+
+# 挂载目录
+VOLUME /home/x5
+# 创建目录
+RUN mkdir -p /home/x5
+# 指定路径
+WORKDIR /home/x5
+# 复制jar文件到路径
+COPY ./jar/x5-modules-file.jar /home/x5/x5-modules-file.jar
+# 启动文件服务
+ENTRYPOINT ["java","-jar","x5-modules-file.jar"]

@@ -1,0 +1,15 @@
+# 基础镜像
+FROM  openjdk:8-jre
+# author
+MAINTAINER x5
+
+# 挂载目录
+VOLUME /home/x5
+# 创建目录
+RUN mkdir -p /home/x5
+# 指定路径
+WORKDIR /home/x5
+# 复制jar文件到路径
+COPY ./jar/x5-gateway.jar /home/x5/x5-gateway.jar
+# 启动网关服务
+ENTRYPOINT ["java","-jar","x5-gateway.jar"]

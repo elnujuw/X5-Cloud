@@ -1,0 +1,3 @@
+org.junle.x5.system.api.factory.RemoteUserFallbackFactory
+org.junle.x5.system.api.factory.RemoteLogFallbackFactory
+org.junle.x5.system.api.factory.RemoteFileFallbackFactory
