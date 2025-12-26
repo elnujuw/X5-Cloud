@@ -2,7 +2,7 @@
 
 X5是一套全部开源的快速开发平台。
 
-* 采用前后端分离的模式，微服务版本前端(基于 [X5-Cloud-Vue3](https://gitee.com/elnujuw/X5-Cloud-Vue3))。
+* 采用前后端分离的模式，微服务版本前端(基于 [X5-Cloud-VUE3](https://github.com/elnujuw/X5-Cloud-VUE3))。
 * 后端采用Spring Boot、Spring Cloud & Alibaba。
 * 注册中心、配置中心选型Nacos，权限认证使用Redis。
 * 流量控制框架选型Sentinel，分布式事务选型Seata。
@@ -34,10 +34,6 @@ org.junle
 │       └── x5-visual-monitor                      // 监控中心 [9100]
 ├──pom.xml                // 公共依赖
 ~~~
-
-## 架构图
-
-<img src="https://oscimg.oschina.net/oscnet/up-82e9722ecb846786405a904bafcf19f73f3.png"/>
 
 ## 内置功能
 
